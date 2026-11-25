@@ -6,7 +6,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
-API_KEY = "YOUR_GOOGLE_API_KEY"
+API_KEY = os.getenv("GOOGLE_API_KEY")  # export GOOGLE_API_KEY=...
 genai.configure(api_key=API_KEY)
 
 @app.route('/upload', methods=['POST'])
