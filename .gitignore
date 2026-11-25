@@ -4,3 +4,6 @@ webcam2.js
 fruit.html
 main.html
 fruit.js
+uploads/
+__pycache__/
+.env
